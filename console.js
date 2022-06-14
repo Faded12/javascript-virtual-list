@@ -17,16 +17,20 @@ const load = throttle(() => {
     box.innerHTML = `控制台：<xmp>${res}</xmp>`
 }, 300)
 
+// 这里事件只是为了触发页面展示当前dom元素，没别的用处
 window.onmousemove = (e) => {
     updataInfo()
 }
 window.onmousewheel = (e) => {
     updataInfo()
 }
-window.mousedown = (e) => {
+window.onmousedown = (e) => {
     updataInfo()
 }
 window.ontouchmove = (e) => {
+    updataInfo()
+}
+window.ontouchend = (e) => {
     updataInfo()
 }
 
