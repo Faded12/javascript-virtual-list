@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#virtual-list {
+    background: #fff8eb;
+    color: #f0b551;
+    overflow: auto;
+}
+
+.row-content {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #eee;
+    font-size: 20px;
+    padding: 20px auto;
+}
