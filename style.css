@@ -4,14 +4,32 @@
     box-sizing: border-box;
 }
 
+.warp{
+    display: flex;
+    flex-direction: row;
+}
+
 #virtual-list {
     background: #fff8eb;
     color: #f0b551;
     overflow: auto;
 }
 
+#console{
+    height: 100vh;
+    width: 50vw;
+    padding: 12px 10px;
+}
+
+xmp{
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    max-height: 100%;
+}
+
 .row-content {
     height: 100%;
+    width: 50vw;
     display: flex;
     align-items: center;
     justify-content: center;

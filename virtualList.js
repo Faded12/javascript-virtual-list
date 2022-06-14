@@ -141,7 +141,7 @@ class VirtualList {
         const rowContent = this.renderItem(item);
         const row = document.createElement('div');
         row.style.height = this.rowHeight + 'px';
-        row.dataset.index = item;
+        // row.dataset.index = item;
         row.appendChild(rowContent);
         return row;
     }
