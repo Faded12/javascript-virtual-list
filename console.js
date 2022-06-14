@@ -26,6 +26,9 @@ window.onmousewheel = (e) => {
 window.mousedown = (e) => {
     updataInfo()
 }
+window.ontouchmove = (e) => {
+    updataInfo()
+}
 
 function updataInfo() {
     load()
