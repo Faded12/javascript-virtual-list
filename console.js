@@ -1,3 +1,6 @@
+const scroller = document.querySelector('#virtual-list');
+scroller.addEventListener('scroll',updataInfo);
+
 const throttle = (fn, wait) => {
     let lastTime = 0
     return function (...args) {
@@ -15,24 +18,7 @@ const load = throttle(() => {
     res = text.innerHTML.replaceAll("<div style=\"height: 60px;\">", '').replaceAll('</div></div>',
         '</div>\n')
     box.innerHTML = `控制台：<xmp>${res}</xmp>`
-}, 300)
-
-// 这里事件只是为了触发页面展示当前dom元素，没别的用处
-window.onmousemove = (e) => {
-    updataInfo()
-}
-window.onmousewheel = (e) => {
-    updataInfo()
-}
-window.onmousedown = (e) => {
-    updataInfo()
-}
-window.ontouchmove = (e) => {
-    updataInfo()
-}
-window.ontouchend = (e) => {
-    updataInfo()
-}
+}, 200)
 
 function updataInfo() {
     load()
